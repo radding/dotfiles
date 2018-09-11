@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-DIR=$( cd "$( dirname "$0" )" && pwd )
+SCRIPTDIR=$( cd "$( dirname "$0" )" && pwd )
+DIR=${"$DIR"-"SCRIPTDIR"}
 $DIR/header.sh "Detected Mac install"
 
 $DIR/header.sh "Installing Homebrew"

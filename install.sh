@@ -10,7 +10,8 @@
 #
 ###############################################################################
 set -e
-DIR=$( cd "$( dirname "$0" )" && pwd )
+SCRIPTDIR=$( cd "$( dirname "$0" )" && pwd )
+DIR=${"$DIR"-"SCRIPTDIR"}
 $DIR/header.sh "Wooo fresh install! Lets get started!"
 PKG=eopkg
 DOTBASH=""
